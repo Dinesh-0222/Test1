@@ -1,10 +1,10 @@
-def reverse_string(s):
-       if len(s) <= 1:
-              return s
+def reverse_string(ch):
+       if len(ch) <= 1:
+              return ch
        
        else: 
-              return reverse_string(s[1:]) + s[0]
+              return reverse_string(ch[1:]) +ch[0]
        
-s = input("Any string: ")
-print("Original string: ", s)
-print("Reversed string: ", reverse_string(s))
+ch = input("Any string: ")
+print("Original string: ", ch)
+print("Reversed string: ", reverse_string(ch))
